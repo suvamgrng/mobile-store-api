@@ -1,4 +1,10 @@
 package com.suvam.mobilestore.repository;
 
-public interface ProductRepo {
+import com.suvam.mobilestore.data.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepo extends JpaRepository<Product, Integer> {
+
 }
